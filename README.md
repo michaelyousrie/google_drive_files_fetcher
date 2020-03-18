@@ -17,4 +17,4 @@ There are three (3) total routes in the application.
 # NOTE
 - When using /store, it will truncate all the files that are locally saved and will replace them with the new fetched files from Google Drive.
 - I used the google service account authentication method instead of using OAuth2 to make it easier to download and setup on different machines and because I don't have a valid URL to use as a redirect URL since the usage of Google Api requires a valid redirect URL.
-- The folder being accessed is https://drive.google.com/drive/u/0/folders/12ezEA9Pt9wIEJlRZi7TyI9kPC-Htlcq_ which is publicly available to everyone. Any file added there will be available for listing using this application.
+- The folder being accessed is https://drive.google.com/drive/folders/12ezEA9Pt9wIEJlRZi7TyI9kPC-Htlcq_ which is publicly available to everyone. Any file added there will be available for listing using this application.
