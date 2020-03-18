@@ -9,14 +9,11 @@ class GoogleDrive
 {
     public static function listFiles()
     {
-        $apiKey = env("GOOGLE_API_KEY", "AIzaSyBwSflbQCEy6vazwRuWAbKJW44BQZmHY0g");
-
         $creds_path = public_path('creds.json');
         putenv("GOOGLE_APPLICATION_CREDENTIALS={$creds_path}");
 
         $client = new Google_Client();
         $client->setApplicationName("Files Fetcher");
-        $client->setDeveloperKey($apiKey);
         $client->useApplicationDefaultCredentials();
         $client->setScopes(Google_Service_Drive::DRIVE_METADATA_READONLY);
 
